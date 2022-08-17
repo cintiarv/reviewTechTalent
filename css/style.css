@@ -1,1 +1,49 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn-techTalent {
+  border: none;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  width: 150px;
+  height: 40px;
+}
+.btn-techTalent.contained {
+  background-color: #F2994A;
+  color: #FFFFFF;
+}
+.btn-techTalent.contained:hover {
+  background-color: #C87B4D;
+}
+.btn-techTalent.contained:active {
+  background-color: #9A2E34;
+}
+.btn-techTalent.outlined {
+  background-color: #FFFFFF;
+  color: #221413;
+  border: 1px solid #F2994A;
+  font-weight: 600;
+}
+.btn-techTalent.outlined:hover {
+  border-color: #C87B4D;
+}
+.btn-techTalent.outlined:active {
+  border-color: #9A2E34;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,5 @@
+@use '../mixins';
+
+.btn-techTalent {
+    @include mixins.btn-techTalent;
+}
