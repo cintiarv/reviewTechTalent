@@ -6,7 +6,7 @@
     padding: 31px 0;
     background-color: variables.$brown-900;
 
-    @include mixins.responsive(variables.$large){
+    @include mixins.responsive('lg'){
         padding-bottom: 23px;
     }
 
@@ -47,7 +47,7 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 16px;
-            color: variables.$white-100;
+            color: variables.$white;
         }
     }
 
@@ -62,7 +62,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 16px;
-        color: variables.$white-100;
+        color: variables.$white;
     }
 
     .poweredBy{
@@ -70,6 +70,6 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 16px;
-        color: variables.$white-100;
+        color: variables.$white;
     }
 }
