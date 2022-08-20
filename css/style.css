@@ -24,6 +24,7 @@ p {
   line-height: 19px;
   width: 150px;
   height: 40px;
+  letter-spacing: 0.5px;
 }
 .btn-techTalent.contained {
   background-color: #F2994A;
@@ -47,7 +48,31 @@ p {
 .btn-techTalent.outlined:active {
   border-color: #9A2E34;
 }
+.btn-techTalent--nocolor {
+  border: 1px solid #F2994A;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.btn-techTalent--nocolor:hover {
+  border: 1px solid #C87B4D;
+}
+.btn-techTalent--nocolor:active {
+  border: 1px solid #9A2E34;
+}
 
+@media (max-width: 767px) {
+  .btn-techTalent {
+    margin-bottom: 15px;
+  }
+  .btn-techTalent--nocolor {
+    margin-bottom: 20px;
+  }
+  .btn-sm {
+    flex-direction: column;
+    display: flex !important;
+    align-items: center;
+  }
+}
 .footer {
   margin-top: 24px;
   padding: 31px 0;
@@ -105,4 +130,72 @@ p {
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
+}
+
+.bg-image {
+  background: linear-gradient(83.1deg, rgba(154, 46, 52, 0) -0.08%, #C87B4D 93.59%), url("../../assets/home/hero/Banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 72px;
+  color: #F0D3B5;
+  text-align: center;
+  justify-content: center;
+}
+.hero__logo {
+  width: 51px;
+  height: 60px;
+  display: block;
+}
+.hero__center {
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+}
+.hero__text {
+  color: #FFFFFF;
+}
+.hero__text p {
+  color: #F5CC6A;
+}
+.hero__text .span {
+  color: #F5CC6A;
+}
+.hero__text .span__bold {
+  font-weight: 600;
+  color: #F5CC6A;
+}
+.hero__anchor2 {
+  margin-right: 30px;
+  margin-left: 20px;
+  color: #F0D3B5;
+}
+.hero__anchor2:hover {
+  color: #C87B4D;
+  cursor: pointer;
+}
+.hero__anchor2:active {
+  color: #9A2E34;
+}
+.hero__anchor1 {
+  text-decoration: none;
+  color: #F0D3B5;
+}
+.hero__anchor1:hover {
+  color: #C87B4D;
+}
+.hero__anchor1:active {
+  color: #9A2E34;
+}
+
+@media (max-width: 767px) {
+  .hero__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
 }/*# sourceMappingURL=style.css.map */

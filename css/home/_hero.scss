@@ -1,0 +1,81 @@
+@use '../variables';
+@use '../mixins';
+@use '../base';
+
+.bg-image{
+    background: linear-gradient(83.1deg, rgba(154, 46, 52, 0) -0.08%, #C87B4D 93.59%), url('../../assets/home/hero/Banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero{
+    &__title{
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 72px;
+        color: variables.$brown-600;
+        text-align: center;
+        justify-content: center;
+        
+
+    }
+    &__logo{
+        width: 51px;
+        height: 60px;
+        display: block;
+    }
+    &__center{
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+    }
+    &__text{
+        color: variables.$white-100;
+        p{
+            color:variables.$brown-700;
+        }
+        .span{
+            color:variables.$brown-700;
+            &__bold{
+            font-weight: 600;
+            color:variables.$brown-700;
+            }
+        }
+    }
+  
+    &__anchor2{
+        margin-right: 30px;
+        margin-left: 20px;
+        color: variables.$brown-600;
+        &:hover{
+            color: variables.$brown-900;
+            cursor: pointer;
+        }
+        
+        &:active{
+            color: variables.$red-900;
+        }
+
+    }
+    &__anchor1{
+        text-decoration: none;
+        color: variables.$brown-600;
+        &:hover{
+            color: variables.$brown-900;
+        }
+        
+        &:active{
+            color: variables.$red-900;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .hero{
+        &__title{
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+    }
+}
