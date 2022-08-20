@@ -1,33 +1,31 @@
-@use '../mixins';
-@use '../variables';
+@use "../../css/mixins";
+@use "../variables";
+@use "../base";
 
 .btn-techTalent {
-    @include mixins.btn-techTalent;
-&--nocolor{
+  @include mixins.btn-techTalent;
+  &--nocolor {
     border: 1px solid variables.$brown-800;
     background-color: transparent;
     color: variables.$white-100;
-    &:hover{
-        border: 1px solid variables.$brown-900;
+    &:hover {
+      border: 1px solid variables.$brown-900;
     }
 
-    &:active{
-        border: 1px solid variables.$red-900;
+    &:active {
+      border: 1px solid variables.$red-900;
     }
-}
-}
-
-@media (max-width: 767px){
-    .btn-techTalent{
-        margin-bottom: 15px;
-       &--nocolor{
-        margin-bottom: 20px;
-       }
-    }
-    .btn-sm{
-        flex-direction: column;
-        display: flex !important;
-        align-items: center;    
-    }
+  }
 }
 
+.btn-sm {
+  flex-direction: column;
+  display: flex !important;
+  align-items: center;
+  margin-bottom: 25px;
+  @include mixins.responsive(variables.$medium) {
+    flex-direction: row;
+    max-width: 35%;
+    margin-left: 10px;
+  }
+}

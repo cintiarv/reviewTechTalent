@@ -25,6 +25,7 @@ p {
   width: 150px;
   height: 40px;
   letter-spacing: 0.5px;
+  margin-bottom: 10px;
 }
 .btn-techTalent.contained {
   background-color: #F2994A;
@@ -60,19 +61,20 @@ p {
   border: 1px solid #9A2E34;
 }
 
-@media (max-width: 767px) {
-  .btn-techTalent {
-    margin-bottom: 15px;
-  }
-  .btn-techTalent--nocolor {
-    margin-bottom: 20px;
-  }
+.btn-sm {
+  flex-direction: column;
+  display: flex !important;
+  align-items: center;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
   .btn-sm {
-    flex-direction: column;
-    display: flex !important;
-    align-items: center;
+    flex-direction: row;
+    max-width: 35%;
+    margin-left: 10px;
   }
 }
+
 .footer {
   margin-top: 24px;
   padding: 31px 0;
@@ -133,19 +135,25 @@ p {
 }
 
 .bg-image {
-  background: linear-gradient(83.1deg, rgba(154, 46, 52, 0) -0.08%, #C87B4D 93.59%), url("../../assets/home/hero/Banner.jpg");
+  background: linear-gradient(83.1deg, rgba(154, 46, 52, 0) -0.08%, #c87b4d 93.59%), url("../../assets/home/hero/Banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .hero__title {
-  font-size: 48px;
-  font-weight: 800;
-  line-height: 72px;
+  font-size: 32px;
+  line-height: 48px;
   color: #F0D3B5;
   text-align: center;
   justify-content: center;
+  font-weight: 800;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 48px;
+    line-height: 72px;
+  }
 }
 .hero__logo {
   width: 51px;
@@ -191,11 +199,4 @@ p {
 }
 .hero__anchor1:active {
   color: #9A2E34;
-}
-
-@media (max-width: 767px) {
-  .hero__title {
-    font-size: 32px;
-    line-height: 48px;
-  }
 }/*# sourceMappingURL=style.css.map */
